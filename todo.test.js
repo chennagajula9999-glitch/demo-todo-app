@@ -1,0 +1,1 @@
+const { addTodo, removeTodo, todos } = require('./todo.js'); test('addTodo adds a new item to the list', () => { addTodo('Buy milk'); expect(todos.length).toBeGreaterThan(0); }); test('removeTodo removes an item by index', () => { addTodo('Temp item'); const before = todos.length; removeTodo(0); expect(todos.length).toBe(before - 1); }); 
